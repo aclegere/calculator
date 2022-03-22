@@ -18,6 +18,18 @@ equalBtn.addEventListener('click', ()=>{
     }
 });
 
+const decimal = document.querySelector('.decimal-btn')
+decimal.addEventListener('click', () => {
+    addDecimal();
+})
+
+function addDecimal() {
+    if(!currentNum.includes('.')) {
+        currentNum+='.'
+        currentDisplay.textContent = currentNum; 
+    }
+}
+
 const operators = document.querySelectorAll('.operator')
 
 const numberBtns = document.querySelectorAll('.number')
@@ -68,7 +80,7 @@ function calc() {
     
     if(operator === '÷'){
         if(currentNum <= 0){
-            previousNum='Nah Dawg'
+            previousNum='Nah Dawgie'
             limitDisplay()
             return
         } else {
