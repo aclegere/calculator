@@ -10,30 +10,34 @@
 </head>
 <body class="min-h-screen bg-orange-300 flex items-center justify-center">
     <div class="calculator-container bg-orange-400 border-2 border-gray-900 shadow-2xl rounded-lg">
-        <form class="border-b-2 border-gray-900">
-            <input type="number" class="bg-transparent p-8 rounded-t-lg outline-none focus:bg-gray-700 text-3xl text-right text-white font-mono">
-        </form>
+        <div class="border-b-2 border-gray-900 bg-transparent p-8 rounded-t-lg outline-none focus:bg-gray-700 text-3xl text-right text-white font-mono">
+            <div class="output">
+                <div class="previous"></div>
+                <div class="current">0</div>
+            </div>
+        </div>
         <div class="p-6 text-gray-800 grid grid-cols-4 gap-4 text-xl">
-            <button class="C-btn font-mono col-span-3 bg-rose-400 hover:bg-blue-400 rounded-full p-5">C</button>
-            <button class="divide-btn font-mono bg-amber-400 hover:bg-amber-700 rounded-full p-5">&divide;</button>
+            <button class="C-btn font-mono col-span-3 bg-amber-400 hover:bg-blue-400 rounded-full p-5">C</button>
+            <button class="operator divide-btn font-mono bg-amber-400 hover:bg-amber-700 rounded-full p-5">&divide;</button>
       
-            <button class="btn7 font-mono bg-orange-300 hover:bg-gray-400 rounded-full p-5">7</button>
-            <button class="btn8 font-mono bg-orange-300 hover:bg-gray-400 rounded-full p-5">8</button>
-            <button class="btn9 font-mono bg-orange-300 hover:bg-gray-400 rounded-full p-5">9</button>
-            <button class="multiply-btn font-mono bg-amber-400 hover:bg-amber-700 rounded-full p-5">&times;</button>
+            <button class="number font-mono bg-orange-300 hover:bg-gray-400 rounded-full p-5">7</button>
+            <button class="number font-mono bg-orange-300 hover:bg-gray-400 rounded-full p-5">8</button>
+            <button class="number font-mono bg-orange-300 hover:bg-gray-400 rounded-full p-5">9</button>
+            <button class="operator multiply-btn font-mono bg-amber-400 hover:bg-amber-700 rounded-full p-5">&times;</button>
       
-            <button class="btn4 font-mono bg-orange-300 hover:bg-gray-400 rounded-full p-5">4</button>
-            <button class="btn5 font-mono bg-orange-300 hover:bg-gray-400 rounded-full p-5">5</button>
-            <button class="btn6 font-mono bg-orange-300 hover:bg-gray-400 rounded-full p-5">6</button>
-            <button class="minus-btn font-mono bg-amber-400 hover:bg-amber-700 rounded-full p-5">&minus;</button>
+            <button class="number font-mono bg-orange-300 hover:bg-gray-400 rounded-full p-5">4</button>
+            <button class="number font-mono bg-orange-300 hover:bg-gray-400 rounded-full p-5">5</button>
+            <button class="number font-mono bg-orange-300 hover:bg-gray-400 rounded-full p-5">6</button>
+            <button class="operator minus-btn font-mono bg-amber-400 hover:bg-amber-700 rounded-full p-5">&minus;</button>
       
-            <button class="btn1 font-mono bg-orange-300 hover:bg-gray-400 rounded-full p-5">1</button>
-            <button class="btn2 font-mono bg-orange-300 hover:bg-gray-400 rounded-full p-5">2</button>
-            <button class="btn3 font-mono bg-orange-300 hover:bg-gray-400 rounded-full p-5">3</button>
-            <button class="plus-btn font-mono bg-amber-400 hover:bg-amber-700 rounded-full p-5">&plus;</button>
+            <button class="number font-mono bg-orange-300 hover:bg-gray-400 rounded-full p-5">1</button>
+            <button class="number font-mono bg-orange-300 hover:bg-gray-400 rounded-full p-5">2</button>
+            <button class="number font-mono bg-orange-300 hover:bg-gray-400 rounded-full p-5">3</button>
+            <button class="operator plus-btn font-mono bg-amber-400 hover:bg-amber-700 rounded-full p-5">&plus;</button>
       
-            <button class="btn0 font-mono bg-orange-300 hover:bg-gray-400 rounded-full p-5">0</button>
-            <button class="equal-btn font-mono col-span-3 bg-amber-400 hover:bg-amber-700 rounded-full p-5">&equals;</button>
+            <button class="number font-mono bg-orange-300 hover:bg-gray-400 rounded-full p-5">0</button>
+            <button class="decimal-btn font-mono bg-amber-400 hover:bg-amber-700 rounded-full p-5">.</button>
+            <button class="equal-btn font-mono col-span-2 bg-amber-400 hover:bg-amber-700 rounded-full p-5">&equals;</button>
         </div>
     </div>  
 </body>
